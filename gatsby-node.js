@@ -36,7 +36,7 @@ exports.createPages = async ({
       fromPath: path,
       toPath: `https://gatsbyjs.com${path}`,
       isPermanent: true,
-      redirectInBrowser: true,
+      // redirectInBrowser: true,
     })
   })
 
