@@ -1,3 +1,4 @@
+# this file needs to be added to .org
 # slugified tags on .org had dashes that WP doesn't include
 - fromPath: /blog/tags/a-11-y/
   toPath: https://gatsbyjs.com/blog/tags/a11y/
