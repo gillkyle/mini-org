@@ -1,0 +1,18 @@
+
+## Created with gatsby-plugin-netlify
+/accessibility-statement/  https://gatsbyjs.com/accessibility-statement/
+/blog/  https://gatsbyjs.com/blog/
+/blog/100days/  https://gatsbyjs.com/blog/100days/
+/contributing/  https://gatsbyjs.com/contributing/
+/creators/  https://gatsbyjs.com/creators/
+/docs/  https://gatsbyjs.com/docs/
+/ecosystem/  https://gatsbyjs.com/ecosystem/
+/features/  https://gatsbyjs.com/features/
+/guidelines/color/  https://gatsbyjs.com/guidelines/color/
+/languages/  https://gatsbyjs.com/languages/
+/packages/@1papaya/gatsby-plugin-transition-link/  https://gatsbyjs.com/packages/@1papaya/gatsby-plugin-transition-link/
+/plugins/  https://gatsbyjs.com/plugins/
+/readme/  https://gatsbyjs.com/readme/
+/showcase/  https://gatsbyjs.com/showcase/
+/starters/  https://gatsbyjs.com/starters/
+/tutorial/  https://gatsbyjs.com/tutorial/
