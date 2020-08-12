@@ -3,6 +3,7 @@ const fs = require("fs")
 const { loadYaml } = require(`./src/utils/load-yaml`)
 const redirects = loadYaml(`./redirects.yaml`)
 const cloudRedirects = loadYaml(`./cloud-redirects.yaml`)
+const startersRedirects = require(`./starter-redirects.json`)
 
 exports.createPages = async ({ actions: { createPage, createRedirect } }) => {
   // take all entries from the .org source map and make pages from them
@@ -17,14 +18,6 @@ exports.createPages = async ({ actions: { createPage, createRedirect } }) => {
         pagePath: path,
       },
     })
-
-    // 1:1 mapping of pages to redirects
-    // await createRedirect({
-    //   fromPath: path,
-    //   toPath: `https://gatsbyjs.com${path}`,
-    //   isPermanent: true,
-    //   force: true,
-    // })
   })
 
   /**
@@ -40,6 +33,15 @@ exports.createPages = async ({ actions: { createPage, createRedirect } }) => {
   //  using relative links for the toPath
   redirects.forEach(redirect => {
     createRedirect({ isPermanent: true, ...redirect, force: true })
+  })
+
+  Object.entries(startersRedirects).forEach(([fromSlug, toSlug]) => {
+    createRedirect({
+      fromPath: `/starters${fromSlug}`,
+      toPath: `https://gatsbyjs.com/starters${toSlug}`,
+      isPermanent: true,
+      force: true,
+    })
   })
 
   // one-off redirects for .com
