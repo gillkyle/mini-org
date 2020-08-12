@@ -55,6 +55,12 @@ exports.createPages = async ({ actions: { createPage, createRedirect } }) => {
     isPermanent: true,
     force: true,
   })
+  await createRedirect({
+    fromPath: `/creators/*`,
+    toPath: `https://gatsbyjs.com/partner/`,
+    isPermanent: true,
+    force: true,
+  })
 
   // catch all redirect
   //  this needs to be the last redirect created or it'll match everything
